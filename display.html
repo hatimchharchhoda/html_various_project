@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: 20% 43%;
+        }
+        .btn{
+            background-color: aquamarine;
+            padding: 10px;
+            font-size: x-large;
+        }
+        .d1{
+           display: none;
+           position: relative;
+
+        }
+        .d3{
+           display: none;
+           position: relative;
+
+        }
+        a{
+            border: 2px dotted grey;
+            padding: 5px 20px;
+            font-size: medium;
+            display: block;
+            text-decoration: none;
+        }
+        .d2:hover .d1{display: block;
+        }
+        .d2:hover .d3{display: block;
+        }
+        .d1 a:hover{
+            background-color: rgb(136, 136, 134);
+        }
+        .d3 a:hover{
+            background-color: rgb(136, 136, 134);
+        }
+        .btn:hover{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <table>
+    <tr>
+    <th class="d2">
+        <button class="btn">dropdown</button>
+        <div class="d1">
+            <a href="#">link 1</a> <br>     
+            <a href="#">link 2</a> <br>  
+            <a href="#">link 3</a>     
+        </div>
+    </th>
+    <th class="d2">
+        <button class="btn">bixby</button>
+        <div class="d3">
+            <a href="#">link 1</a> <br>     
+            <a href="#">link 2</a> <br> 
+            <a href="#">link 3</a>     
+        </div>
+    </th>
+</tr></table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+    <script lang="js">
+         function add()
+         {
+            var a,b,c;
+            a=Number(f1.n1.value);
+            b=Number(f1.n2.value);
+            f1.n3.value=a+b;
+         }
+         function sub()
+         {
+            var a,b,c;
+            a=Number(f1.n1.value);
+            b=Number(f1.n2.value);
+            f1.n3.value=a-b;
+         }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <table>
+            <tr>
+                <td>no.1</td>
+                <td>:</td>
+                <td><input type="text" name="n1" placeholder="enter no. 1"></td>
+            </tr>
+            <tr>
+                <td>no.2</td>
+                <td>:</td>
+                <td><input type="text" name="n2" placeholder="enter no. 2"></td>
+            </tr>
+            <tr>
+                <td><input class="remove" type="button" name="bt1" value="addition" onclick="add()"></td>
+            </tr>
+            <tr>
+                <td>Ans</td>
+                <td>:</td>
+                <td><input type="text" name="n3" placeholder="ans"></td>
+            </tr> 
+        </table>
+    </form>
+</body>
+</html>

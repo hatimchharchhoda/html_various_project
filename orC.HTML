@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=nM, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    
+<style>
+
+    .t1{
+        
+        border-radius: 5px;
+        padding: 50px;
+        margin:70px;
+        background-color: aquamarine;
+    }
+    .t1:hover{
+        background-color: brown;
+    }
+    </style>
+    <script>
+        function validate(){
+        var x=document.getElementById("name").value;
+        var y=document.getElementById("pw").value;
+
+        if(x == "" && y == "")
+        {
+
+             alert("ENTER PROPERLY");
+        }
+        else{
+            window.print()
+        }
+    }
+    </script>
+</head>
+<body>
+    <table class="t1" border="2px">
+        <tr>
+    <td>Name:<input type="text" id="name"></td>
+    </tr>
+    <tr>
+    <td>Password:<input type="password" id="pw"></td>
+    
+  <td>  <INPUT type="submit" onclick="validate()"></td>
+    </tr>
+    </table>
+</body>
+</html>

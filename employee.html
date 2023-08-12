@@ -1,0 +1,85 @@
+<html>
+<head>
+    <script>
+        function validate(){
+              var userid = document.employeeform.userid.value;
+              var name = document.employeeform.name.value;              
+              var pass = document.employeeform.pass.value;
+              var time = document.employeeform.time.value;
+              var department = document.employeeform.dept.value;
+            if(userid=="")
+            {
+                alert("please enter your id");
+                return false;
+            }
+                if(name=="") 
+            {
+                alert("please enter your name");
+                return false;
+            }
+            if(name<='a'&&name>='z'&&name<='A'&&name>='Z')
+            {
+                alert("name must be character");
+                return false;
+            }   
+            if(time=="")
+            {
+                alert("please choose your working time");
+                return false;
+            }
+            if(department=="")
+            {
+                alert("please choose your department of work");
+                return false;
+            }            
+            if(pass=="")
+            {
+                alert("enter your password");
+                return false;
+            }          
+            
+           
+             return true;
+        }
+    </script>
+</head>
+<body bgcolor="lightyellow">
+<form method="post" name="employeeform" >
+<center><b><h1>EMPLOYEE REGISTRATION FORM</h1></b></center>
+<table>
+<tr>
+<th>Employee-ID</th>
+<th>:</th>
+<td><input type="textbox" placeholder="enter your user-id" name="userid"></td>
+</tr>
+<tr>
+<th>Name</th>
+<th>:</th>
+<td><input type="textbox" placeholder="enter your name" name="name" ></td>
+<tr>
+<th>Shift-time</th>
+<th>:</th>
+<td><input type="radio" name="time">Day<input type="radio" name="time">Night</td>
+</tr>
+<tr>
+<th>Work-in</th>
+<th>:</th>
+<td><input type="radio" name="dept">backhand programer</td>
+<td><input type="radio" name="dept">fronthand programer</td>
+<td><input type="radio" name="dept">security checker</td>
+<td><input type="radio" name="dept">web designer</td>
+</tr>
+<tr>
+<th>Password</th>
+<th>:</th>
+<td><input type="password" placeholder="enter your password" name="pass"></td>
+</tr>
+<tr>
+<th>Feedback</th>
+<th>:</th>
+<td><input type="textbox" name="feedback"></td>
+</tr>
+</table>
+<center><input type="submit" name="submit" onclick=" return validate()"><input type="reset"></center>
+<a href="">sign up </a>
+</form></body></html>
